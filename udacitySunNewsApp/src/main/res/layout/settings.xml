@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blackbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <com.nectar.thesun.library.MyTextView
+            android:id="@+id/MyTextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SETTINGS"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bodytextcolor" >
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+        
+
+            <Switch
+                android:id="@+id/switchvibrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vibrate"
+                android:textSize="16sp"
+                android:textColor="@color/bodytextcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+    
+        
+
+            <Switch
+                android:id="@+id/switchsound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sound" 
+                android:textSize="16sp"
+                android:textColor="@color/bodytextcolor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+        
+
+            <Switch
+                android:id="@+id/switchupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check for Updates"
+                android:textSize="16sp"
+                android:textColor="@color/bodytextcolor" />
+        </LinearLayout>
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+               <TextView
+                   android:id="@+id/textView1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Font Size"
+                   android:textSize="16sp"
+                android:textColor="@color/bodytextcolor" />
+
+               <SeekBar
+                   android:id="@+id/seekbarfont"
+                  
+                   android:layout_width="200dp"
+                   android:layout_height="wrap_content"
+                   android:max="20"
+                   
+                   android:progress="13" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

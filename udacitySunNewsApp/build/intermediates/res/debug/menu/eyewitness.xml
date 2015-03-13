@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	
+      <item
+        android:id="@+id/action_send"
+        android:orderInCategory="200"
+        android:title="@string/action_send"
+        android:icon="@drawable/ic_action_content_send"
+              />
+      
+</menu>
+<!-- From: file:/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/src/main/res/menu/eyewitness.xml -->

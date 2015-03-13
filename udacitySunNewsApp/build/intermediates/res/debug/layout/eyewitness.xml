@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blackbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <com.nectar.thesun.library.MyTextView
+            android:id="@+id/MyTextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EYEWITNESS REPORT"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bodytextcolor" >
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+           >
+			 <requestFocus />
+            <EditText
+                android:id="@+id/editTextStoryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false" >
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <EditText
+                android:id="@+id/editTextStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textMultiLine" >
+
+</EditText>
+         
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" 
+            android:orientation="vertical">
+
+            <com.nectar.thesun.library.MyButton
+                android:id="@+id/ButtonAddMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#c02822"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:enabled="false"
+                android:text="+ Image or Video"
+                android:textColor="#fff" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/myTextViewmedianame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible"
+                android:text="Media name" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/myTextViewmedianame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="This Feature is Coming Soon" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+</LinearLayout><!-- From: file:/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/src/main/res/layout/eyewitness.xml -->

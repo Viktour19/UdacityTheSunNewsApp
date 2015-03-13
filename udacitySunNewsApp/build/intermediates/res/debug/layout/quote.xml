@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"  
+    android:alpha="0.5"
+    android:background="#000"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <com.nectar.thesun.library.MyTextView
+        android:id="@+id/myTextViewQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:textSize="20sp"   
+        android:text="Quote"
+        android:textColor="@android:color/white" />
+
+    <com.nectar.thesun.library.MyTextView
+        android:id="@+id/myTextViewQuoteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp" 
+        android:text="~ Victor Akinwande"
+        android:textColor="@android:color/white" />
+
+    <com.nectar.thesun.library.MyButton
+        android:id="@+id/ButtonEnterApp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="#F77900"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Click to read News"
+        android:textColor="#fff" />
+ 
+</LinearLayout>
+<!-- From: file:/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/src/main/res/layout/quote.xml -->

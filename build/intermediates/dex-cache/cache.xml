@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/victor/Documents/AndroidStudio/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-4a6c1ff57acec5daaf30ea1c3e254a5678384401.jar" />
+    </item>
+    <item
+        jar="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/pre-dexed/debug/classes-c1722ff1c0a9896cf3ae627b80af4c22000aa821.jar" />
+    </item>
+    <item
+        jar="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/UdacitySunNewsApp/pagerslidingtabstrip/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8861a926d8ec59437f920463ddcdb4b0c63d82c1">
+        <dex dex="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/pre-dexed/debug/classes-993006f8a6852bca8f984f4afb76a4b87ffaed58.jar" />
+    </item>
+    <item
+        jar="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/libs/jsoup-1.8.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3d57e95c0f150b885ccdbda7a12bef353fd31d02">
+        <dex dex="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/pre-dexed/debug/jsoup-1.8.1-0ab23cc3d2849bef3a0be61e6075a32859bf71ab.jar" />
+    </item>
+    <item
+        jar="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/UdacitySunNewsApp/actionbarsherlock/unspecified/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
+        <dex dex="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/pre-dexed/debug/android-support-v4-db5d797a9ed4a65b18940399ef9eef1eef9649bf.jar" />
+    </item>
+    <item
+        jar="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/UdacitySunNewsApp/actionbarsherlock/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c611ea8b439fdd5fd04a88e7aed4b4c7bdaf950e">
+        <dex dex="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/pre-dexed/debug/classes-e0f393cf476f36a8906ce65776482558dfc1236e.jar" />
+    </item>
+    <item
+        jar="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/libs/gson.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/pre-dexed/debug/gson-1f97f7f492d2c3359bf8cdb2a5211adde2b56af4.jar" />
+    </item>
+    <item
+        jar="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-7752b05f07f86d93784bd19441e9be0a1bbcbbf3.jar" />
+    </item>
+    <item
+        jar="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/UdacitySunNewsApp/androidrssmaster/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="072b5d34a18f74ca7d0f43b82fcd8bd3d5b9ed1a">
+        <dex dex="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/pre-dexed/debug/classes-5c468df3293a9988d5db52b641cc56a9943d66e4.jar" />
+    </item>
+    <item
+        jar="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/libs/picasso-2.3.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3b646ddbdac8a33fc45b64564011da81d23e4635">
+        <dex dex="/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/pre-dexed/debug/picasso-2.3.4-a7e36ddd6df17eddb41569f672710877b94b70ba.jar" />
+    </item>
+
+</items>

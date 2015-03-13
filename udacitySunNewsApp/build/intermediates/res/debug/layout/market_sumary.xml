@@ -1,0 +1,3720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/summaryroot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buttoncolor"
+    android:orientation="vertical" >
+    
+	   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blackbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <com.nectar.thesun.library.MyTextView
+            android:id="@+id/myTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Market Summary"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <com.nectar.thesun.library.MyTextView
+            android:id="@+id/myTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nigerian Stock Exchange"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.nectar.thesun.library.MyTextView
+            android:id="@+id/summarydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/summaryheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/myTextView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/myTextView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Opening"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/myTextView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Closing"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="true" >
+        
+    </ProgressBar>
+    
+        <android.widget.LinearLayout
+            android:id="@+id/layoutsummarycontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:orientation="vertical" >
+
+             <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="AGRICULTURE"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamelivestock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="LIVESTOCK"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openinglivestock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closinglivestock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    
+          <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameokomuoil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="OKOMUOIL"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingokomuoil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingokomuoil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+          <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamepresco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="PRESCO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingpresco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingpresco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    
+              <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="AIRLINES"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameAirService"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="AIRSERVICE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingAirService"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingAirService"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    
+          <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamenacho"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="NACHO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingnacho"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingnacho"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+              <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="AUTOMOBILE AND TYRE"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamedunlop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="DUNLOP"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingdunlop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingdunlop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    
+          <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamertbriscoe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="RTBRISCOE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingbriscoe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingbriscoe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+       
+          
+ <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BANKING"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameabbeybds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="ABBEYBDS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingabbeybds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingabbeybds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    
+          <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamertaccess"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="ACCESS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingaccess"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingaccess"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameasosavings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="ASOSAVINGS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingasosavings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingasosavings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamediamond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="DIAMONDBANK"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingdiamond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingdiamond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamefcmb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="FCMB"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingfcmb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingfcmb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+ <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamefidelity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="FIDELITYBK"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingfidelity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingfidelity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameguaranty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="GUARANTY"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingguaranty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingguaranty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamertskye"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="SKYEBANK"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingskye"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingskye"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamesterlin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="STERLINBANK"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingsterling"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingsterlin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnametranscorp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="TRANSCORP"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingtranscorp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingtranscorp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameuba"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="UBA"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openinguba"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closinguba"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameubn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="UBN"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingubn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingubn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameunitybk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="UNITYBNK"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingunitybk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingunitybk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamewemabk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="WEMABANK"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingwemabk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingwema"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameaenithbk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="ZENITHBANK"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingzenith"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingzenith"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+           <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BREWERIES"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamechampion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CHAMPION"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingchampion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingchampion "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameguiness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="GUINNESS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingguinness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingguinness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameintbrew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="INTBREW"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingintbrew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingintbrew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+            <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamenb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="NB"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingnb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingnb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+            <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameprembrew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="PREMBREW"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingprembrew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingprembrew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BUILDING MATERIALS"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnameashakacem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="ASHAKACEM"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingashakacem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingashakacem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CCNN"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingccnn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingccnn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="DANGCEM"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingdangcem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingdangcem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="MULTIVERSE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingmultiverse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingmultiverse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolnamewapco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="WAPCO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingwapco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingwapco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+ <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="CHEMICALS AND PAINTS"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="BERGER"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingberger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingberger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CAP"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingcap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingcap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="DNMEYER"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingdnmeyer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingdnmeyer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="PORTPAINT"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingportpaint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingportpaint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="COMMERCIAL SERVICES"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="ABCTRANS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingabctrans"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingabctrans"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="COURTVILLE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingcourtville"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingcourtville"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="IKEJAHOTEL"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingikejahotel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingikejahotel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="REDSTAREX"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingredstarex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingredstarex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+               <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="TRANSEXPR"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingtransexpr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingtransexpr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="COMPUTER OFFICE EQUIPMENT"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+               
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CHAMS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingchams"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingchams"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+          <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="CONGLOMORATES"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="AGLEVENT"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingaglevent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingaglevent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="PZ"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingpz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingpz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="UAC-PROP"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openinguacprop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closinguacprop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="UACN"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openinguacn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closinguacn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>   
+          <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="UNILEVER"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingunilever"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingunilever"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="CONSTRUCTION"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="COSTAIN"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingcostain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingcostain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="JBERGER"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingjberger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingjberger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="FOOD BEVERAGES AND TOBACCO"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="7UP"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/opening7up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closing7up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CADBURY"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingcadbury"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingcadbury"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="DANGFLOUR"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingdangflour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingdangflour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="DANGSUGAR"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingdangsugar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingdangsugar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="FLOURMILL"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingflourmill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingflourmill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="FTNCOCOA"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingftncocoa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingftncocoa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="HONYFLOUR"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openinghonyflour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closinghonyflour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="NASCON"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingnascon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingnascon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="NESTLE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingnestle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingnestle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+          <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="HEALTHCARE"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="EKOCORP"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingekocorp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingekocorp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="EVANSMED"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingevensmed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingevensmed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="FIDSON"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingfidson"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingfidson"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="GLAXOSMITH"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingglaxosmith"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingglaxosmith"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="MAYBAKER"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingmaybaker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingmaybaker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="NEIMETH"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingneimeth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingneimeth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="PHARMDEKO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingpharmdeko"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingpharmdeko"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="INDUSTRIAL DOMESTIC PRODUCTS"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="VITAFOAM"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingvitafoam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingvitafoam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="VONO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingvono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingvono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="INSURANCE"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="AIICO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingaiico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingaiico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CILIEASING"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingcileasing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingcileasing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CONTINSURE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingcontinsure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingcontinsure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CORNERST"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingcornerst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingcornerst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CUSTODYINS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingcustodyins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingcustodyins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="EQUITYASUR"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingequityasur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingequityasur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="HMARKINS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openinghmarkins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closinghmarkins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="INTENEGINS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingintenegins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingintenegins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="LASACO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openinglasaco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closinglasaco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="LAWUNION"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openinglawunion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closinglawunion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="linkassure"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openinglinkassure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closinglinkassure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="NEM"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingnem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingnem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="NIGERINS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingnigerins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingnigerins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="PRESTIGE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingprestige"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingprestige"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="REGALINS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingregalins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingregalins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="ROYALEX"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingroyalex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingroyalex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+              <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="SOUVRENINS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingsouvrenins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingsouvrenins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="STACO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingstaco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingstaco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="STDINSURE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingstdinsure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingstdinsure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="UNIC"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingunic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingunic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="UNIVINSURE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingunivinsure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingunivinsure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="WAPIC"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingwapic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingwapic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="INVESTMENT COMPANIES"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="NESF"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingnesf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingnesf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="PACKAGING"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingbetaglass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingbetaglas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+          <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="PETROLEUM MARKETING"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CONOIL"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingconoil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingconoil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="JAPAULOIL"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingjapauloil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingjapauloil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="MOBIL"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingmobil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingmobil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="OANDO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingoando"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingoando"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="TOTAL"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingtotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingtotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+          <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SECOND TIER SECURITIES"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CUTIX"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingcutix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingcutix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+          <com.nectar.thesun.library.MyTextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="OTHERS"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+           <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="AFRIPRUD"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingafriprud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingafriprud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="ETERNA"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingeterna"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingeterna"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="DAARCOMM"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingdaarcomm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingdaarcomm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="FO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="LEARNAFRICA"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openinglearnafrica"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closinglearnafrica"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="SEPLAT"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingseplat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingseplat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+             <LinearLayout
+            
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="CAVERTON"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/openingcaverton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/closingcaverton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        </android.widget.LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView><!-- From: file:/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/src/main/res/layout/market_sumary.xml -->

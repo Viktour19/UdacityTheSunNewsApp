@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.nectar.thesun.library.MyTextView
+        android:id="@+id/newscategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category Name"
+        android:textColor="@color/headerstextcolor"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <ImageView
+            android:id="@+id/newsimage"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:src="@drawable/feeditemleftbar" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="top"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/image" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+              android:layout_gravity="top"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/newsheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="This is a test news Item, if you&apos;re reading this its a bug, please send us a message regarding it."
+                android:textColor="@color/bodytextcolor"
+                android:textSize="17sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="SEPT. 12, 2014"
+                android:textColor="@color/bodytextcolor" />
+
+            <ImageView
+                android:id="@+id/shareicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/shareicon" />
+
+            <ImageView
+                android:id="@+id/addtofavsicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/shareicon"
+                android:src="@drawable/addtofavsicon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

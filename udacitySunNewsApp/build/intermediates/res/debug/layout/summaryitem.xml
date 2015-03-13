@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/symbolname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="LIVESTOCK"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/opening"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="23.11"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="-0.08"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </LinearLayout>
+    
+
+</LinearLayout>
+<!-- From: file:/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/src/main/res/layout/summaryitem.xml -->

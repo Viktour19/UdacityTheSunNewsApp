@@ -1,0 +1,3 @@
+include ':androidrssmaster'
+include ':pagerslidingtabstrip'
+include ':udacitySunNewsApp'

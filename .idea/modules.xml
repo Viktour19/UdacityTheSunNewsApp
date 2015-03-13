@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/UdacitySunNewsApp.iml" filepath="$PROJECT_DIR$/UdacitySunNewsApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidrssmaster/androidrssmaster.iml" filepath="$PROJECT_DIR$/androidrssmaster/androidrssmaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pagerslidingtabstrip/pagerslidingtabstrip.iml" filepath="$PROJECT_DIR$/pagerslidingtabstrip/pagerslidingtabstrip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udacitySunNewsApp/udacitySunNewsApp.iml" filepath="$PROJECT_DIR$/udacitySunNewsApp/udacitySunNewsApp.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <ImageView
+            android:id="@+id/imageViewslider"          
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+         
+            android:src="@drawable/imgload" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp" >
+
+
+                 <ImageView
+                     android:id="@+id/imageViewslidericon2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="3dp"
+                     android:src="@drawable/slidericonred" />
+
+            <ImageView
+                android:id="@+id/imageViewslidericon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/slidericonwhite" />
+                      <ImageView
+                android:id="@+id/imageViewslider3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/slidericonred" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+          android:id="@+id/homeheadertop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical" >
+
+        <com.nectar.thesun.library.MyTextView
+            android:id="@+id/myTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Stories"
+              android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/topstoriesicon" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/newsheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="This is a test news Item, if you&apos;re reading this its a bug, please send us a message regarding it."
+                android:textColor="@color/headerstextcolor"
+                android:textSize="19sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newsheader"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="2dp"
+                android:text="SEPT. 12, 2014"
+                android:textColor="@color/bodytextcolor" />
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

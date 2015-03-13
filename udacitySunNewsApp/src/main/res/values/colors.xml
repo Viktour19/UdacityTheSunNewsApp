@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_tab_pressed">#e5e4e4</color>
+    <color name="headerstextcolor">#b14e24</color>
+    <color name="bodytextcolor">#444444</color>
+    <color name="buttoncolor">#B03C33</color>
+     <color name="white">#FFF</color>
+</resources>

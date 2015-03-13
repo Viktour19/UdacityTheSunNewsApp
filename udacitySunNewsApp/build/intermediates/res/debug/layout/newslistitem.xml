@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:layout_marginRight="10dp"
+    android:orientation="vertical" >
+
+    <com.nectar.thesun.library.MyTextView
+        android:id="@+id/newscategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/headerstextcolor"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/feeditemleftbar" />
+
+        <ImageView
+            android:id="@+id/newsimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"            
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/imgload" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+              android:layout_gravity="top"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/newsheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+               
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:text="This is a test news Item, if you&apos;re reading this its a bug, please send us a message regarding it."
+                android:textColor="@color/bodytextcolor"
+                android:textSize="15sp" />
+
+            <com.nectar.thesun.library.MyTextView
+                android:id="@+id/date"
+              
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newsheader"
+                android:layout_alignParentLeft="true"
+                android:text="SEPT. 12, 2014"
+                android:textSize="12sp"
+                android:textColor="@color/buttoncolor" />
+   <com.nectar.thesun.library.MyTextView
+                android:id="@+id/prenews"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="SEPT. 12, 2014"
+                android:textSize="12sp"
+                android:textColor="@color/bodytextcolor" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/src/main/res/layout/newslistitem.xml -->

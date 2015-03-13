@@ -1,0 +1,10 @@
+/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/classes/debug
+/home/victor/Documents/AndroidStudio/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar
+/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/UdacitySunNewsApp/pagerslidingtabstrip/unspecified/classes.jar
+/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/UdacitySunNewsApp/androidrssmaster/unspecified/classes.jar
+/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/libs/picasso-2.3.4.jar
+/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/libs/gson.jar
+/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar
+/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/libs/jsoup-1.8.1.jar
+/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar
+/home/victor/AndroidstudioProjects/UdacitySunNewsApp/udacitySunNewsApp/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar
