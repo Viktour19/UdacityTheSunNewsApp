@@ -47,7 +47,6 @@ public class OtherPagesFragment extends Fragment {
 	private final int columns = 9;
 	private final int eyewitness = 10;
 	private final int marketsummary = 11;
-	private final int about = 12;
 	private final int setting = 13;
 	private ProgressBar spinner;
 	private ListView ll;
@@ -68,7 +67,7 @@ public class OtherPagesFragment extends Fragment {
 		ConnectionDetector cd = new ConnectionDetector(getActivity());
 		int i = getArguments().getInt(ARG_PLANET_NUMBER);
 		View rootView = null;
-		if (!cd.isConnectingToInternet() && i != about) {
+		if (!cd.isConnectingToInternet()) {
 			rootView = inflater.inflate(R.layout.nointernet, container, false);
 			return rootView;
 		}
@@ -156,10 +155,7 @@ public class OtherPagesFragment extends Fragment {
 			uri = MyConstants.columsnewsfeedul;
 			loadNews(columns);
 			return rootView;
-	
-		case about:
-			rootView = inflater.inflate(R.layout.about, container, false);
-			return rootView;
+
 		default:
 			return rootView;
 		}

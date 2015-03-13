@@ -8,13 +8,18 @@
     android:orientation="vertical"
     tools:context=".SplashScreen" >
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <TextView
+        android:id="@+id/logotext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:src="@drawable/splashlogo" />
+        android:text="The Sun"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="40dp" />
+
+
 
     <LinearLayout
         android:id="@+id/LinearLayout1"
@@ -25,20 +30,7 @@
         android:layout_marginBottom="20dp"
         android:orientation="vertical" >
 
-        <com.nectar.thesun.library.MyTextView
-            android:id="@+id/myTextView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Powered by" />
 
-        <com.nectar.thesun.library.MyTextView
-            android:id="@+id/myTextView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal"
-            android:text="NECTAR" />
 
     </LinearLayout>
 

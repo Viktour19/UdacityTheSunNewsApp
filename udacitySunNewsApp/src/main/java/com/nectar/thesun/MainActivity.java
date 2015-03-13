@@ -100,7 +100,7 @@ public class MainActivity extends ActionBarActivity {
 		if (i.getStringExtra("quote") != null) {
 			quote = i.getStringExtra("quote");
 			title = i.getStringExtra("quotetitle");
-		//	showDialog(QUOTE_DIALOG);
+		showDialog(QUOTE_DIALOG);
 		}
 		DrawlerTitles = MyConstants.drawertitles;
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
