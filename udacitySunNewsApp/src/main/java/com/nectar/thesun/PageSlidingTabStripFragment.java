@@ -57,16 +57,16 @@ public class PageSlidingTabStripFragment extends Fragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setRetainInstance(true);
-        db = new NewsListDatabase(mcontext);
-        if(db.getNews() != null) {
-            MyConstants.homenews = db.getNews();
-            HomeFragment.Setup();
+
+        if(MyConstants.homenews == null) {
+            MyConstants.homenews = new ArrayList<>();
+
         }
 		if (!isAsyncTaskPendingOrRunning())
 		{
-
-			loadNewsNow(getActivity());
             mcontext = getActivity().getApplicationContext();
+            loadNewsNow(getActivity());
+
 		}
 		
 	}
@@ -211,7 +211,16 @@ public class PageSlidingTabStripFragment extends Fragment {
 			
 		}
 
-		@Override
+     @Override
+     protected void onPreExecute() {
+         super.onPreExecute();
+         if(MyConstants.homenews != null) {
+
+             HomeFragment.Setup();
+         }
+     }
+
+     @Override
 		protected Boolean doInBackground(Object... arg0) {
 			// TODO Auto-generated method stub
 			cd = new ConnectionDetector((Activity)arg0[0]);
@@ -316,10 +325,10 @@ public class PageSlidingTabStripFragment extends Fragment {
 								news = new News(newss, title, link, imageuri, "",
 										datetime, category, pageid, description);
 								MyConstants.homenews.add(news);
-                                db.addNews(news);
+
 							}
 						}
-					
+
 						SessionManagement sm = new SessionManagement((Activity)arg0[0]);
 						try {
 							MyConstants.favoritenews = sm.getfavs();
@@ -327,8 +336,16 @@ public class PageSlidingTabStripFragment extends Fragment {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
-						sm.addNews("BREAKING", MyConstants.breakingnews);
-						sm.addNews("HOME", MyConstants.homenews);
+                        sm.addNews("BREAKING", MyConstants.breakingnews);
+                        sm.addNews("HOME", MyConstants.homenews);
+                        try {
+                            db.addNews(MyConstants.homenews);
+                        }
+                        catch (Exception e)
+                        {
+                            return true;
+                        }
+
 						return true;
 					}
 				}

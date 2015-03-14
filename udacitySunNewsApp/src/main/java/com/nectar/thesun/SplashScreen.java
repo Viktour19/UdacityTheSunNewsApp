@@ -16,6 +16,7 @@ import android.support.v4.app.TaskStackBuilder;
 
 import com.nectar.thesun.library.ConnectionDetector;
 import com.nectar.thesun.library.MyConstants;
+import com.nectar.thesun.library.NewsListDatabase;
 
 import org.mcsoxford.rss.RSSFeed;
 import org.mcsoxford.rss.RSSItem;
@@ -46,6 +47,8 @@ public class SplashScreen extends Activity {
 
 			done = (Boolean) result;
 			if (done) {
+                NewsListDatabase db = new NewsListDatabase(activity);
+                MyConstants.homenews = db.getNews();
 				Intent i = new Intent(SplashScreen.this, MainActivity.class);
 				i.putExtra("quote", Quote);
 				i.putExtra("quotetitle", QuoteTitle);
@@ -107,7 +110,9 @@ public class SplashScreen extends Activity {
 			cd = new ConnectionDetector(getApplicationContext());
 			if (cd.isConnectingToInternet()) {
 				SPLASH_TIME_OUT = 10000;
-				lq.execute();
+                lq.execute();
+
+
 			} else {
 				if (lq != null) {
 					if (lq.getStatus() != Status.RUNNING)

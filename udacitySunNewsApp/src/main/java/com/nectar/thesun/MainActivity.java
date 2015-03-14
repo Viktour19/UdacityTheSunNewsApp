@@ -277,7 +277,7 @@ public class MainActivity extends ActionBarActivity {
         i.putExtra("position", mPosition);
 
 		startActivity(i);
-		
+        finish();
 
 	}
 

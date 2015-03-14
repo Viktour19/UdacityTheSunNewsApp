@@ -28,16 +28,18 @@ public class NewsListDatabase extends SQLiteOpenHelper {
 	public static final String COL_NEWS = "news";
 	 
 	private static final String CREATE_TABLE_NEWS = "create table " + TABLE_NEWS
-	+ " (" + ID + " integer primary key autoincrement, " + COL_TITLE 
+	+ " (" + ID + " integer primary key autoincrement, " + COL_TITLE
 	+ " text not null, " + COL_NEWS + " text not null, " + COL_URL + " text not null, " + COL_IMGURI + " text not null, " 
-	+ COL_PAGEID + " text not null, " + COL_REPORTER + " text not null, "
+	+ COL_PAGEID + " integer UNIQUE ON CONFLICT REPLACE, " + COL_REPORTER + " text not null, "
 	+ COL_DATETIME + " text not null, " + COL_CATEGORY + " text not null, " + COL_DESC + " text not null);";
 	 
 	private static final String DB_SCHEMA = CREATE_TABLE_NEWS;
+    private final SQLiteDatabase db;
 
-	public NewsListDatabase(Context context) {
+    public NewsListDatabase(Context context) {
 		super(context, DB_NAME, null, DB_VERSION);
 		// TODO Auto-generated constructor stub
+        db = this.getWritableDatabase();
 	}
 
 	@Override
@@ -57,7 +59,6 @@ public class NewsListDatabase extends SQLiteOpenHelper {
 
     public void addNews(News news)
     {
-        SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
 
@@ -70,12 +71,12 @@ public class NewsListDatabase extends SQLiteOpenHelper {
         values.put(COL_DESC,  news.description);
         values.put(COL_CATEGORY,  news.category);
         values.put(COL_PAGEID,  news.pageid);
-
-        db.insert(TABLE_NEWS, null, values);
+        db.insertWithOnConflict(TABLE_NEWS, COL_PAGEID, values, SQLiteDatabase.CONFLICT_REPLACE);
+       // db.insert(TABLE_NEWS, null, values);
         db.close(); // Closing database connection
     }
 	public void addNews(String news, String title, String link, String imageuri, String reporter, String datetime, String category, int pageid, String description) {
-		SQLiteDatabase db = this.getWritableDatabase();
+
 
 		ContentValues values = new ContentValues();
 
@@ -88,8 +89,8 @@ public class NewsListDatabase extends SQLiteOpenHelper {
 		values.put(COL_DESC,  description);
 		values.put(COL_CATEGORY,  category);
 		values.put(COL_PAGEID,  pageid);
-			
-		db.insert(TABLE_NEWS, null, values);
+		db.insertWithOnConflict(TABLE_NEWS, COL_PAGEID, values, SQLiteDatabase.CONFLICT_REPLACE);
+		//db.insertWithOnConflict(TABLE_NEWS, null, values);
 		db.close(); // Closing database connection
 	}
 
@@ -116,22 +117,25 @@ public class NewsListDatabase extends SQLiteOpenHelper {
 	public ArrayList<News> getNews() {
 		News news = null;
 		String selectQuery = "SELECT  * FROM " + TABLE_NEWS;
-        if(getUserRowCount() == 0)
+        int count = getUserRowCount();
+        if(count == 0)
             return null;
-		ArrayList<News> gotten = new ArrayList<News>(getUserRowCount());
+		ArrayList<News> gotten = new ArrayList<News>(count);
 
-		SQLiteDatabase db = this.getReadableDatabase();
 		Cursor cursor = db.rawQuery(selectQuery, null);
 		// Move to first row
 		cursor.moveToFirst();
-		if (cursor.getCount() > 0) {
-			news = new News(cursor.getString(cursor.getColumnIndex(COL_NEWS)), cursor.getString(cursor.getColumnIndex(COL_TITLE)),
-					cursor.getString(cursor.getColumnIndex(COL_URL)), cursor.getString(cursor.getColumnIndex(COL_IMGURI)),
-					cursor.getString(cursor.getColumnIndex(COL_REPORTER)), cursor.getString(cursor.getColumnIndex(COL_DATETIME)),
-					cursor.getString(cursor.getColumnIndex(COL_CATEGORY)), Integer.valueOf(cursor.getString(cursor.getColumnIndex(COL_PAGEID))),
-					cursor.getString(cursor.getColumnIndex(COL_DESC)));
-			gotten.add(news);
-		}
+		if (count > 0) {
+            while (cursor.isAfterLast() == false) {
+                news = new News(cursor.getString(cursor.getColumnIndex(COL_NEWS)), cursor.getString(cursor.getColumnIndex(COL_TITLE)),
+                        cursor.getString(cursor.getColumnIndex(COL_URL)), cursor.getString(cursor.getColumnIndex(COL_IMGURI)),
+                        cursor.getString(cursor.getColumnIndex(COL_REPORTER)), cursor.getString(cursor.getColumnIndex(COL_DATETIME)),
+                        cursor.getString(cursor.getColumnIndex(COL_CATEGORY)), Integer.valueOf(cursor.getString(cursor.getColumnIndex(COL_PAGEID))),
+                        cursor.getString(cursor.getColumnIndex(COL_DESC)));
+                gotten.add(news);
+                cursor.moveToNext();
+            }
+        }
 		cursor.close();
 		db.close();
 		// return user
@@ -155,7 +159,6 @@ public class NewsListDatabase extends SQLiteOpenHelper {
 
 		Cursor cursor = db.rawQuery(countQuery, null);
 		int rowCount = cursor.getCount();
-		db.close();
 		cursor.close();
 
 		// return row count
@@ -171,5 +174,28 @@ public class NewsListDatabase extends SQLiteOpenHelper {
 		db.delete(TABLE_NEWS, null, null);
 
 		db.close();
-	} 
+	}
+
+    public void addNews(ArrayList<News> homenews) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        for (int i =0; i< homenews.size(); i++) {
+            ContentValues values = new ContentValues();
+
+            values.put(COL_NEWS, homenews.get(i).news);
+            values.put(COL_TITLE, homenews.get(i).title);
+            values.put(COL_URL, homenews.get(i).link);
+            values.put(COL_IMGURI, homenews.get(i).imageuri);
+            values.put(COL_REPORTER, homenews.get(i).reporter);
+            values.put(COL_DATETIME, homenews.get(i).datetime);
+            values.put(COL_DESC, homenews.get(i).description);
+            values.put(COL_CATEGORY, homenews.get(i).category);
+            values.put(COL_PAGEID, homenews.get(i).pageid);
+            db.insertWithOnConflict(TABLE_NEWS, COL_PAGEID, values, SQLiteDatabase.CONFLICT_REPLACE);
+         //   db.insert(TABLE_NEWS, null, values);
+
+        }
+        db.close(); // Closing database connection
+    }
 }
