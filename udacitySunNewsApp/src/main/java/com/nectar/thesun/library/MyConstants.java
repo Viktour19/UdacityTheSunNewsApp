@@ -40,7 +40,7 @@ public class MyConstants {
 	public final static String quotesfeedurl = "http://feeds.feedburner.com/brainyquote/QUOTEBR";
 	public final static String webcrawlerapiurl = "http://thesunnewswebapp.azurewebsites.net/api/WebCrawler/";
 	public static final String[] drawertitles = {" Home", " National", " Politics", " Business",  " Sports", " Editorial", " Entertainment", " Features" ,
-		" Opinion", " Columns", " EyeWitness", " Market Summary", " About Us", " Settings"};
+		" Opinion", " Columns", " EyeWitness", " Market Summary", " Settings"};
 	public static final String nsestockurl = "http://nsefinance.com/api/stocks/";
 	public static ArrayList<Symbols> symbols = null;
 	public static String appurl = "https://play.google.com/store/apps/details?id=com.nectar.thesun";

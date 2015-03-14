@@ -32,6 +32,7 @@ import com.astuetz.PagerSlidingTabStrip;
 import com.nectar.thesun.library.ConnectionDetector;
 import com.nectar.thesun.library.MyConstants;
 import com.nectar.thesun.library.News;
+import com.nectar.thesun.library.NewsListDatabase;
 import com.nectar.thesun.library.SessionManagement;
 import com.nectar.thesun.library.Urls;
 
@@ -44,23 +45,28 @@ public class PageSlidingTabStripFragment extends Fragment {
 	public static loadNews ln = null;
     private static boolean apphasupdates;
     private boolean connecting = false;
-	
+    private static Context mcontext;
 	public static final String TAG = PageSlidingTabStripFragment.class
 			.getSimpleName();
 
 	public static PageSlidingTabStripFragment newInstance() {
 		return new PageSlidingTabStripFragment();
 	}
-
+    NewsListDatabase db;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setRetainInstance(true);
-		
+        db = new NewsListDatabase(mcontext);
+        if(db.getNews() != null) {
+            MyConstants.homenews = db.getNews();
+            HomeFragment.Setup();
+        }
 		if (!isAsyncTaskPendingOrRunning())
 		{
-		
+
 			loadNewsNow(getActivity());
+            mcontext = getActivity().getApplicationContext();
 		}
 		
 	}
@@ -143,6 +149,7 @@ public class PageSlidingTabStripFragment extends Fragment {
 
 		@Override
 		public Fragment getItem(int position) {
+
 			switch (position) {
 			case 0:
 				fragment = (Fragment) Fragment.instantiate(getActivity(), HomeFragment.class.getName());
@@ -166,7 +173,8 @@ public class PageSlidingTabStripFragment extends Fragment {
 		private WeakReference<PageSlidingTabStripFragment> fragmentWeakRef;
 		private int callcounter;
 
-		public loadNews(PageSlidingTabStripFragment pageSlidingTabStripFragment) {
+
+     public loadNews(PageSlidingTabStripFragment pageSlidingTabStripFragment) {
 			this.fragmentWeakRef = new WeakReference<PageSlidingTabStripFragment>(
 					pageSlidingTabStripFragment);
 		}
@@ -207,6 +215,7 @@ public class PageSlidingTabStripFragment extends Fragment {
 		protected Boolean doInBackground(Object... arg0) {
 			// TODO Auto-generated method stub
 			cd = new ConnectionDetector((Activity)arg0[0]);
+            NewsListDatabase db = new NewsListDatabase(mcontext);
 			UserFunctions uf = new UserFunctions();
 			ArrayList<Integer> pageids = new ArrayList<Integer>();
 			RSSReader reader = new RSSReader();
@@ -307,6 +316,7 @@ public class PageSlidingTabStripFragment extends Fragment {
 								news = new News(newss, title, link, imageuri, "",
 										datetime, category, pageid, description);
 								MyConstants.homenews.add(news);
+                                db.addNews(news);
 							}
 						}
 					

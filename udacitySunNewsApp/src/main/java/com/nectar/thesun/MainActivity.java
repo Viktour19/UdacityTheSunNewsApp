@@ -243,7 +243,7 @@ public class MainActivity extends ActionBarActivity {
 					
 		
 			break;
-		case 13:
+		case 12:
 			mDrawerLayout.closeDrawer(mDrawerList);
 			getSupportFragmentManager()
 			.beginTransaction()
@@ -270,7 +270,12 @@ public class MainActivity extends ActionBarActivity {
 	public void onItemClick(int mPosition, int j) {
 		Intent i = new Intent(getApplicationContext(), ReadActivity.class);
 		i.putExtra("listname", j);
-		i.putExtra("position", mPosition);
+		if(j == 0)
+        {
+           mPosition= MyConstants.homenews.get(mPosition).getPageid();
+        }
+        i.putExtra("position", mPosition);
+
 		startActivity(i);
 		
 

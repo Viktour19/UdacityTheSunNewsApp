@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.nectar.thesun.library.MyConstants;
 import com.nectar.thesun.library.MyTextView;
 import com.nectar.thesun.library.News;
+import com.nectar.thesun.library.NewsListDatabase;
 import com.nectar.thesun.library.SessionManagement;
 import com.squareup.picasso.Picasso;
 
@@ -81,8 +82,9 @@ public class ReadActivity extends ActionBarActivity {
 
 		switch (listname) {
 		case 0:
+            NewsListDatabase nldb = new NewsListDatabase(getApplicationContext());
 			NEWSLIST = MyConstants.homenews;
-			NEWS = MyConstants.homenews.get(pos);
+			NEWS = nldb.getNewsItem(pos);
 
 			break;
 		case 1:

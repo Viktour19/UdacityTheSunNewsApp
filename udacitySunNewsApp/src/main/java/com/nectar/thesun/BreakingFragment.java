@@ -115,12 +115,13 @@ public class BreakingFragment extends Fragment {
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
+        super.onActivityCreated(savedInstanceState);
         if (MyConstants.breakingnews != null) {
             if (breakingnewsadapter != null) {
                 Setup();
             }
         }
-		super.onActivityCreated(savedInstanceState);
+
 	}
 
 	@Override
