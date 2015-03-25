@@ -199,14 +199,14 @@ public class OtherPagesFragment extends Fragment {
 		@Override
 		protected void onPostExecute(Object result) {
 			// TODO Auto-generated method stub
-
-			if (this.fragmentWeakRef.get() != null) {
-				done = (Boolean) result;
-				if (done) {
-					Setup();
-				}
-			}
-
+            if(isAdded()) {
+                if (this.fragmentWeakRef.get() != null) {
+                    done = (Boolean) result;
+                    if (done) {
+                        Setup();
+                    }
+                }
+            }
 			super.onPostExecute(result);
 		}
 
