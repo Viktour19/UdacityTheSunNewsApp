@@ -39,6 +39,7 @@ public class MainActivity extends ActionBarActivity {
 	private String[] DrawlerTitles;
 	public String quote;
 
+
 	@SuppressWarnings("deprecation")
 	@Override
 	protected Dialog onCreateDialog(int id) {
@@ -56,9 +57,14 @@ public class MainActivity extends ActionBarActivity {
 					.findViewById(R.id.myTextViewQuoteTitle);
 			mtqt.setText("~" + title);
 
-			final MyButton dismiss = (MyButton) layout
+			MyButton dismiss = (MyButton) layout
 					.findViewById(R.id.ButtonEnterApp);
-			dismiss.setOnClickListener(dismissListener);
+			dismiss.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dismissDialog(QUOTE_DIALOG);
+                }
+            });
 
 			AlertDialog.Builder builder = new AlertDialog.Builder(
 					new ContextThemeWrapper(MainActivity.this,
@@ -80,14 +86,6 @@ public class MainActivity extends ActionBarActivity {
 		return super.onCreateDialog(id);
 	}
 
-	OnClickListener dismissListener = new OnClickListener() {
-
-		@Override
-		public void onClick(View arg0) {
-			// TODO Auto-generated method stub
-			dismissDialog(QUOTE_DIALOG);
-		}
-	};
 	private String title;
 
 	@Override
@@ -100,7 +98,8 @@ public class MainActivity extends ActionBarActivity {
 		if (i.getStringExtra("quote") != null) {
 			quote = i.getStringExtra("quote");
 			title = i.getStringExtra("quotetitle");
-		showDialog(QUOTE_DIALOG);
+            if(savedInstanceState == null);
+		     //       showDialog(QUOTE_DIALOG);
 		}
 		DrawlerTitles = MyConstants.drawertitles;
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -171,8 +170,8 @@ public class MainActivity extends ActionBarActivity {
 		case R.id.action_share:
 			Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
 			sharingIntent.setType("text/plain");
-			sharingIntent.putExtra(Intent.EXTRA_TITLE, "Get The Latest news by downloading the Sun News App");
-			sharingIntent.putExtra( Intent.EXTRA_TEXT, MyConstants.appurl);
+			sharingIntent.putExtra( Intent.EXTRA_TEXT,  "Get The Latest news by downloading the Sun News App "
+                    +MyConstants.appurl + " #TheSunNewsPaper");
 			
 			startActivity(sharingIntent);
 			break;
@@ -207,11 +206,19 @@ public class MainActivity extends ActionBarActivity {
 		mDrawerToggle.syncState();
 	}
 
-	@Override
+    @Override
+    protected void onPause() {
+     //   dismissDialog(QUOTE_DIALOG);
+        super.onPause();
+
+    }
+
+    @Override
 	public void onConfigurationChanged(Configuration newConfig) {
 		super.onConfigurationChanged(newConfig);
 		// Pass any configuration change to the drawer toggles
 		mDrawerToggle.onConfigurationChanged(newConfig);
+
 	}
 
 	private void selectItem(int position) {
@@ -277,7 +284,7 @@ public class MainActivity extends ActionBarActivity {
         i.putExtra("position", mPosition);
 
 		startActivity(i);
-        finish();
+       // finish();
 
 	}
 

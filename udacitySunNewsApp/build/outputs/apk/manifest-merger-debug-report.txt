@@ -104,19 +104,27 @@ ADDED from AndroidManifest.xml:36:17
 activity#com.nectar.thesun.MainActivity
 ADDED from AndroidManifest.xml:39:9
 	android:label
-		ADDED from AndroidManifest.xml:42:13
+		ADDED from AndroidManifest.xml:41:13
 	android:logo
-		ADDED from AndroidManifest.xml:43:13
+		ADDED from AndroidManifest.xml:42:13
 	android:name
 		ADDED from AndroidManifest.xml:40:13
 activity#com.nectar.thesun.ReadActivity
-ADDED from AndroidManifest.xml:47:9
+ADDED from AndroidManifest.xml:46:9
 	android:label
-		ADDED from AndroidManifest.xml:50:13
-	android:logo
-		ADDED from AndroidManifest.xml:51:13
-	android:name
+		ADDED from AndroidManifest.xml:49:13
+	android:parentActivityName
 		ADDED from AndroidManifest.xml:48:13
+	android:logo
+		ADDED from AndroidManifest.xml:50:13
+	android:name
+		ADDED from AndroidManifest.xml:47:13
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from AndroidManifest.xml:52:12
+	android:value
+		ADDED from AndroidManifest.xml:54:17
+	android:name
+		ADDED from AndroidManifest.xml:53:17
 android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from AndroidManifest.xml:2:1 reason: org.mcsoxford.rss has a targetSdkVersion < 4
 android:uses-permission#android.permission.READ_PHONE_STATE

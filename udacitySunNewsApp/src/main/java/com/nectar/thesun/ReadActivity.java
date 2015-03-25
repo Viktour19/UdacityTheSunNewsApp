@@ -1,7 +1,12 @@
 package com.nectar.thesun;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
 import android.view.Menu;
@@ -20,6 +25,9 @@ import com.nectar.thesun.library.NewsListDatabase;
 import com.nectar.thesun.library.SessionManagement;
 import com.squareup.picasso.Picasso;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class ReadActivity extends ActionBarActivity {
@@ -29,13 +37,15 @@ public class ReadActivity extends ActionBarActivity {
 	private News NEWS;
 	private Bundle si;
 	private ArrayList<News> NEWSLIST;
+    private Uri bmpUri;
 
-	@Override
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		si = savedInstanceState;
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.read);
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 		Intent i = getIntent();
 		final MyTextView header = (MyTextView) findViewById(R.id.newsheader);
 		final MyTextView news = (MyTextView) findViewById(R.id.news);
@@ -182,8 +192,10 @@ public class ReadActivity extends ActionBarActivity {
 				pos = pos + 1;
 				NEWS = NEWSLIST.get(pos % NEWSLIST.size());
 				ImageView img = (ImageView) findViewById(R.id.imageViewslider);
+
 				Picasso.with(getApplicationContext()).load(NEWS.imageuri)
 						.placeholder(R.drawable.imgload).into(img);
+                bmpUri = getLocalBitmapUri(img);
 				String dt = NEWS.datetime;
 				dt = (dt.substring(0, 10) + ", " + dt.substring(
 						dt.length() - 5, dt.length()));
@@ -198,7 +210,60 @@ public class ReadActivity extends ActionBarActivity {
 		});
 	}
 
-	@Override
+    @Override
+    public void onBackPressed() {
+
+        super.onBackPressed();
+    }
+
+    public Uri getLocalBitmapUri(ImageView imageView) {
+
+        // Extract Bitmap from ImageView drawable
+
+        Drawable drawable = imageView.getDrawable();
+
+        Bitmap bmp = null;
+
+        if (drawable instanceof BitmapDrawable){
+
+            bmp = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
+
+        } else {
+
+            return null;
+
+        }
+
+        // Store image to default external storage directory
+
+        Uri bmpUri = null;
+
+        try {
+
+            File file =  new File(Environment.getExternalStoragePublicDirectory(
+
+                    Environment.DIRECTORY_DOWNLOADS), "share_image_" + System.currentTimeMillis() + ".png");
+
+            file.getParentFile().mkdirs();
+
+            FileOutputStream out = new FileOutputStream(file);
+
+            bmp.compress(Bitmap.CompressFormat.PNG, 90, out);
+
+            out.close();
+
+            bmpUri = Uri.fromFile(file);
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+
+        }
+
+        return bmpUri;
+
+    }
+    @Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater a = getMenuInflater();
 		a.inflate(R.menu.read, menu);
@@ -230,10 +295,9 @@ public class ReadActivity extends ActionBarActivity {
 			Intent sharingIntent = new Intent(
 					android.content.Intent.ACTION_SEND);
 			sharingIntent.setType("text/plain");
-			sharingIntent.putExtra(Intent.EXTRA_TITLE,
-					"Get The Latest news by downloading the Sun News App");
-			sharingIntent.putExtra(Intent.EXTRA_TEXT, MyConstants.appurl);
 
+            //sharingIntent.putExtra(Intent.EXTRA_STREAM, bmpUri);
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, NEWS.title +  " "+ NEWS.link + " #" + NEWS.category);
 			startActivity(sharingIntent);
 			break;
 		case R.id.action_favs:
@@ -270,7 +334,7 @@ public class ReadActivity extends ActionBarActivity {
 							Toast.LENGTH_SHORT).show();
 					}
 				} else {
-					Toast.makeText(getApplicationContext(),
+				Toast.makeText(getApplicationContext(),
 							"This News is already added to your Favorites!",
 							Toast.LENGTH_SHORT).show();
 				}

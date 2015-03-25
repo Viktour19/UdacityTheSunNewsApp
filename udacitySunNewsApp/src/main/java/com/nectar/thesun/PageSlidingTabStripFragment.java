@@ -90,6 +90,7 @@ public class PageSlidingTabStripFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+        connecting = false;
 		cd = new ConnectionDetector(getActivity());
 		if (cd.isConnectingToInternet()) {
 			connecting = true;

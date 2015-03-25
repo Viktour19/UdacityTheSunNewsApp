@@ -38,7 +38,6 @@
         </activity>
         <activity
             android:name="com.nectar.thesun.MainActivity"
-
             android:label="@string/app_name" 
             android:logo="@drawable/actionbarlogo">
           
@@ -46,10 +45,16 @@
 
         <activity
             android:name="com.nectar.thesun.ReadActivity"
+            android:parentActivityName="com.nectar.thesun.MainActivity"
+            android:label="@string/app_name"
+            android:logo="@drawable/actionbarlogo">
 
-            android:label="@string/app_name" 
-            android:logo="@drawable/actionbarlogo"
-            >
+           <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+
         </activity>
 
       
